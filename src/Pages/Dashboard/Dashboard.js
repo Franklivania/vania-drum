@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Transition } from 'react-transition-group';
+import Login from '../../Components/Login/Login';
 import Rightnav from '../../Components/RightNav/Rightnav';
 import Sidenav from '../../Components/SideNav/Sidenav';
 import Topnav from '../../Components/TopNav/Topnav';
@@ -40,10 +41,14 @@ const Dashboard = () => {
               ...transitionStyles[state]
             }}
           >
-            {open && <Sidenav />}
+            {open && 
+              <Sidenav />
+            }
           </div>
         )}
       </Transition>
+
+      <Login/>
 
       <Render />
 

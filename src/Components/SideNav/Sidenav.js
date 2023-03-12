@@ -59,6 +59,7 @@ const Sidenav = () => {
                   <i class="fa-solid fa-star"></i>Albums
                 </Link>
             </nav>
+
         </aside>
     </menu>
   )
